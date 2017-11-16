@@ -1,0 +1,64 @@
+
+ /*Configuracion inicial de la página*/
+
+ * {
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+ margin:0;
+ padding: 0;
+}
+
+body
+{
+ background-color:#FFE5CC;
+ background-image: url('../assets/imgs/coder.png');
+ background-position:center top; /*Posicionamos el fondo en el centro*/
+ background-repeat:no-repeat;/*Indicamos que no se repita el fondo*/
+ background-size: 50%;/*Ajustamos el tamaño de la imagen de fondo*/
+font-family:sans-serif;
+}
+
+header{
+  height:50px;
+  background-color:lightcoral;
+  color:white;
+}
+
+a{
+  color:whitesmoke;
+}
+
+.menu ul{
+  background-color:lightcoral;
+  list-style:none;
+}
+
+.menu li{
+  border: 30px;
+  padding: 15px 10px;
+  display: inline-block;
+}
+
+.menu ul ul{
+  top: 50px;
+  position: absolute;
+}
+
+.menu .itemList li{
+  display:block;
+}
+
+.menu li:hover{
+  background-color: rgba(0,0,0,0.3);/*Opacidad con transparencia*/
+  cursor: pointer;
+}
+
+ /*Clases que apareceran y desaparecerán de acuerdo a JS*/
+.hide {
+  display:none;
+}
+
+.show {
+  display: block;
+}

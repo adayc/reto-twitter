@@ -64,3 +64,15 @@ font-family:sans-serif;
   border: solid 2px red;
   font-weight:italic;
 }
+
+.red{
+  color: red;
+}
+
+.orange{
+  color: orange;
+}
+
+.black{
+  color: black;
+}

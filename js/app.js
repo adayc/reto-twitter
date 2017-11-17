@@ -23,17 +23,27 @@ window.addEventListener('load', function(event) {
       function() {
         counter.innerHTML = 140-(tweet.innerHTML.length);
         if (tweet.innerHTML.length > 140) {
-          counter.style.color = 'red';
+          counter.classList.add('red');
+          counter.classList.remove('orange');
+          counter.classList.remove('black');
           btnTwittear.disabled = true;
         }
         if (tweet.innerHTML.length >= 130 && tweet.innerHTML.length<=140) {
-          counter.style.color = 'red';
+          counter.classList.add('red');
+          counter.classList.remove('orange');
+          counter.classList.remove('black');
         }
         if (tweet.innerHTML.length >= 120 && tweet.innerHTML.length<=129 ) {
-          counter.style.color = 'orange';
+          counter.classList.add('orange');
+          counter.classList.remove('red');
+          counter.classList.remove('black');
+          
         }
         if (tweet.innerHTML.length <120 ) {
-          counter.style.color = 'black';
+          counter.classList.add('black');
+          counter.classList.remove('red');
+          counter.classList.remove('orange');
+          
         }
 
       }

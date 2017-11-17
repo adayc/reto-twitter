@@ -39,7 +39,7 @@ font-family:sans-serif;
   border-radius: 5px;/*Borde radial del boton*/   
   color:#fff;
   cursor: pointer;
-  float: left; 
+
   font-size:15px;
   font-weight:700;
   
@@ -52,4 +52,15 @@ font-family:sans-serif;
   background-color:#128f76;
   color:#fff;
   transition-duration:1s;/*Tiempo de transicion*/
+}
+
+#tweet-content{
+  width:400px;
+  border: solid 2px blue;
+}
+
+.tweet{
+  width:250px;
+  border: solid 2px red;
+  font-weight:italic;
 }

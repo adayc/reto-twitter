@@ -5,60 +5,51 @@
  -webkit-box-sizing: border-box;
  -moz-box-sizing: border-box;
  box-sizing: border-box;
- margin:0;
- padding: 0;
+/* margin:0;
+ padding: 0;*/
 }
 
 body
 {
  background-color:#FFE5CC;
- background-image: url('../assets/imgs/coder.png');
+ /*background-image: url('../assets/imgs/coder.png');*/
  background-position:center top; /*Posicionamos el fondo en el centro*/
  background-repeat:no-repeat;/*Indicamos que no se repita el fondo*/
  background-size: 50%;/*Ajustamos el tamaño de la imagen de fondo*/
 font-family:sans-serif;
 }
 
-header{
-  height:50px;
-  background-color:lightcoral;
-  color:white;
+
+
+#tweet-box{
+  width:300px;
+  border: 1px solid red;
+  
 }
 
-a{
-  color:whitesmoke;
+#tweet-box:empty:not(:focus):before {
+  content:attr(placeholder);
+  color:gray
 }
 
-.menu ul{
-  background-color:lightcoral;
-  list-style:none;
-}
-
-.menu li{
-  border: 30px;
-  padding: 15px 10px;
-  display: inline-block;
-}
-
-.menu ul ul{
-  top: 50px;
-  position: absolute;
-}
-
-.menu .itemList li{
-  display:block;
-}
-
-.menu li:hover{
-  background-color: rgba(0,0,0,0.3);/*Opacidad con transparencia*/
+/*Boton  del formulario*/   
+#sendTwit{
+  background-color:#18bc9c;
+  border-color:#18bc9c;
+  border-radius: 5px;/*Borde radial del boton*/   
+  color:#fff;
   cursor: pointer;
+  float: left; 
+  font-size:15px;
+  font-weight:700;
+  
+  padding: 5px 5px;  
 }
 
- /*Clases que apareceran y desaparecerán de acuerdo a JS*/
-.hide {
-  display:none;
-}
-
-.show {
-  display: block;
+/*Evento Hover-Boton  del formulario*/ 
+#sendTwit:hover{
+  border-color:#11866f;
+  background-color:#128f76;
+  color:#fff;
+  transition-duration:1s;/*Tiempo de transicion*/
 }

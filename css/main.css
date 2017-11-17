@@ -32,11 +32,11 @@ font-family:sans-serif;
   color:gray
 }
 
-/*Boton  del formulario*/   
+/*Boton  del formulario  
 #sendTwit{
   background-color:#18bc9c;
   border-color:#18bc9c;
-  border-radius: 5px;/*Borde radial del boton*/   
+  border-radius: 5px;/*Borde radial del boton   
   color:#fff;
   cursor: pointer;
 
@@ -46,7 +46,7 @@ font-family:sans-serif;
   padding: 5px 5px;  
 }
 
-/*Evento Hover-Boton  del formulario*/ 
+/*Evento Hover-Boton  del formulario*
 #sendTwit:hover{
   border-color:#11866f;
   background-color:#128f76;

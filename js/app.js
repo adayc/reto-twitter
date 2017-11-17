@@ -53,11 +53,27 @@ window.addEventListener('load', function(event) {
 
 
   btnTwittear.addEventListener('click', function(event) {
-    // vamos a igualar al div o label que tiene la cantidad de caracteres
+    
+
+    // Añadiendo tweet
     var newDiv = document.createElement('div');
     newDiv.innerHTML = tweet.innerHTML;
     newDiv.classList.add('tweet');
     alltweets.insertBefore(newDiv, alltweets.childNodes[0]);
+
     tweet.innerHTML = '';
+
+
+
+    // Añadiendo hour
+    var fecha = new Date();
+    var hour=fecha.getHours()+":"+fecha.getMinutes();
+    
+
+    var newHour = document.createElement('div');
+    newHour.innerHTML = hour;
+    newHour.classList.add('hour');
+    alltweets.insertBefore(newHour, alltweets.childNodes[0]);
+    
   });
 });

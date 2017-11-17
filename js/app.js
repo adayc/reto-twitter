@@ -21,31 +21,28 @@ window.addEventListener('load', function(event) {
     // longitud de texto tweet.innerHTML.length
     setInterval(
       function() {
-        counter.innerHTML = 140-(tweet.innerHTML.length);
+        counter.innerHTML = 140 - (tweet.innerHTML.length);
         if (tweet.innerHTML.length > 140) {
           counter.classList.add('red');
           counter.classList.remove('orange');
           counter.classList.remove('black');
           btnTwittear.disabled = true;
         }
-        if (tweet.innerHTML.length >= 130 && tweet.innerHTML.length<=140) {
+        if (tweet.innerHTML.length >= 130 && tweet.innerHTML.length <= 140) {
           counter.classList.add('red');
           counter.classList.remove('orange');
           counter.classList.remove('black');
         }
-        if (tweet.innerHTML.length >= 120 && tweet.innerHTML.length<=129 ) {
+        if (tweet.innerHTML.length >= 120 && tweet.innerHTML.length <= 129) {
           counter.classList.add('orange');
           counter.classList.remove('red');
           counter.classList.remove('black');
-          
         }
-        if (tweet.innerHTML.length <120 ) {
+        if (tweet.innerHTML.length < 120) {
           counter.classList.add('black');
           counter.classList.remove('red');
           counter.classList.remove('orange');
-          
         }
-
       }
       , 100
     );
@@ -53,7 +50,15 @@ window.addEventListener('load', function(event) {
 
 
   btnTwittear.addEventListener('click', function(event) {
-    
+    // Añadiendo hour
+    var fecha = new Date();
+    var hour = fecha.getHours() + ':' + fecha.getMinutes();
+
+
+    var newHour = document.createElement('div');
+    newHour.innerHTML = hour;
+    newHour.classList.add('hour');
+    alltweets.insertBefore(newHour, alltweets.childNodes[0]);
 
     // Añadiendo tweet
     var newDiv = document.createElement('div');
@@ -62,18 +67,5 @@ window.addEventListener('load', function(event) {
     alltweets.insertBefore(newDiv, alltweets.childNodes[0]);
 
     tweet.innerHTML = '';
-
-
-
-    // Añadiendo hour
-    var fecha = new Date();
-    var hour=fecha.getHours()+":"+fecha.getMinutes();
-    
-
-    var newHour = document.createElement('div');
-    newHour.innerHTML = hour;
-    newHour.classList.add('hour');
-    alltweets.insertBefore(newHour, alltweets.childNodes[0]);
-    
   });
 });

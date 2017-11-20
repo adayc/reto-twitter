@@ -1,17 +1,14 @@
-# Trello
+# Twitter
 _____________
 
 
-Trello es un gestor de tareas que permite el trabajo de forma colaborativa mediante tableros
-(board) compuestos de columnas (llamadas listas) que representan distintos estados.
-Se basa en el método Kanban para gestión de proyectos, con tarjetas que viajan por diferentes
-listas en función de su estado. Así, se puede tener una lista de cosas por hacer (o pendientes),
-que se están haciendo (o en proceso) o hechas (terminadas).
+Twitter es un servicio online de comunicación, como lo sería la mensajería instantánea (messenger, etc.), los blogs, las páginas web, etc., pero limitado a que cada mensaje sólo admite hasta 140 caracteres y donde la gente, inicialmente, escribe respondiendo a una simple pregunta: ¿Qué estás haciendo?.
+
+Pero no sólo se puede limitar a qué estás haciendo, sino que puedes interactuar con unos y otros, ya que cada usuario de Twitter “sigue” lo que escriben otros usuarios, así que la interactividad entre otros es como si fuera un enorme chat, pero con las ventajas de que entras cuando quieres, respondes cuando te apetece y lo que te apetece, ves sólo lo que escribe la gente a la que quieres seguir, puedes enviar mensajes privados, recibir gratis mensajes de una u otra forma en tu teléfono móvil, etc.
 
 
 
-
-![Trello](assets/imgs/pic-trello.jpg)
+![Twitter](assets/imgs/pic-twitter.jpg)
 
 ## Detalles adicionales
 -Para esta aplicación se empleó : HTML5, CSS3 y Javascript.

@@ -6,6 +6,9 @@ var counter = document.getElementById('counter');
 
 
 window.addEventListener('load', function(event) {
+
+  tweet.focus();
+  btnTwittear.disabled = true;
   // Habilitando y deshabilitando el boton
   tweet.addEventListener('keyup', function(event) {
     btnTwittear.disabled = false;
@@ -52,7 +55,7 @@ window.addEventListener('load', function(event) {
   btnTwittear.addEventListener('click', function(event) {
     // Añadiendo hour
     var fecha = new Date();
-    var hour = fecha.getHours() + ':' + fecha.getMinutes();
+    var hour = "Publicado a las "+fecha.getHours() + ':' + fecha.getMinutes()+' horas';
 
 
     var newHour = document.createElement('div');

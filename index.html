@@ -5,30 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Twitter</title>
-
-  <!-- Hojas de estilo para este proyecto  -->
+  <!-- Hojas de estilo para la fuente de este proyecto  -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500" rel="stylesheet">
+  <!-- Hojas de estilo personalizada para este proyecto  -->
  
 <link href="css/main.css" rel="stylesheet"> 
 </head>
 <body>
- 
+  <header>
+   <h1>Twitter</h1> 
+  </header>
+ <main>
+    <section id="perfil">
+        
+        
+          <h2>Reto de Código</h2>
+          <p>Hola, soy Ada Yajahuanca <br> Estudiante de Laboratoria</p>
+          
+          <p>Código: LIM172136</p>
+        
+      </section>
   
-
+<section id="post">
     <div name="tweet" id="tweet-box" class="tweet-box rich-editor" contenteditable="true" placeholder="¿Que estas pensando?"></div>
     <button type="submit" class="" id="sendTwit" disabled="true">Twittear</button>
     <div id="counter">140</div>
-
-    <div id="tweet-content">
+  </section>
+    <section id="tweet-content">
         <div class="tweet">
-            twit uno
-          </div>
+           
+        </div>
         <div class="hour">
-            3:30
-          </div>
+          
+        </div>
       
-    </div>
+    </section>
  
-
+  </main>
 
  
  <script src="js/app.js">

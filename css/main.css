@@ -5,25 +5,74 @@
  -webkit-box-sizing: border-box;
  -moz-box-sizing: border-box;
  box-sizing: border-box;
-/* margin:0;
- padding: 0;*/
+margin:0;
+ padding: 0;
 }
 
 body
 {
- background-color:#FFE5CC;
- /*background-image: url('../assets/imgs/coder.png');*/
- background-position:center top; /*Posicionamos el fondo en el centro*/
- background-repeat:no-repeat;/*Indicamos que no se repita el fondo*/
- background-size: 50%;/*Ajustamos el tamaño de la imagen de fondo*/
-font-family:sans-serif;
+ background-color:#e6ecf0;
+ background-image: url('../assets/imgs/bg-twitter.jpg');
+ background-position:center; /*Posicionamos el fondo en el centro*/
+ /*background-repeat:no-repeat;/*Indicamos que no se repita el fondo*/
+ 
+ font-family: 'Fira Sans', sans-serif;
+}
+
+h1{
+  
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+
+
+#perfil {
+  width:40%;
+  
+  margin:25px;
+  display: inline-block;
+ 
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  
+  padding: 20px;
+  text-align:center;
+}
+#perfil h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: rgba(104, 180, 161, 0.9);
+}
+#perfil p {
+  font-size: 25px;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+#post{
+  width:45%;
+  float: right;
+  margin-right:5%;
+  margin-top: 25px;
+  
+ 
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  font-size: 30px;
+  padding: 20px;
+  
+  
 }
 
 
 
 #tweet-box{
-  width:300px;
-  border: 1px solid red;
+ outline:solid 1px gray;
+ 
+  padding: 10px;
   
 }
 
@@ -32,37 +81,38 @@ font-family:sans-serif;
   color:gray
 }
 
-/*Boton  del formulario  
+/*Boton  del formulario  */
 #sendTwit{
-  background-color:#18bc9c;
-  border-color:#18bc9c;
-  border-radius: 5px;/*Borde radial del boton   
-  color:#fff;
+
+  
+  border-radius: 15px;/*Borde radial del boton   */
+  
   cursor: pointer;
 
   font-size:15px;
   font-weight:700;
-  
-  padding: 5px 5px;  
+  margin: 5px;
+  padding: 5px;
 }
 
-/*Evento Hover-Boton  del formulario*
-#sendTwit:hover{
-  border-color:#11866f;
-  background-color:#128f76;
-  color:#fff;
-  transition-duration:1s;/*Tiempo de transicion*/
+#counter {
+  float: right;
+  font-weight: bold;
+  margin-right: 20px;
 }
 
 #tweet-content{
-  width:400px;
-  outline: solid 2px blue;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin:25px;
+  padding:25px 100px;
 }
 
 .tweet{
-  width:250px;
-  border: solid 2px red;
-  font-weight:italic;
+  
+  
+  background-color: rgba(255, 255, 255, 0.3);
+  margin:5px;
 }
 
 .red{
@@ -78,5 +128,9 @@ font-family:sans-serif;
 }
 
 .hour{
-  color: blue;
+  text-align: right;
+  color: black;
+  font-family: Courier New, Courier, monospace;
+  font-size: 15px;
+  margin:5px;
 }

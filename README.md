@@ -11,7 +11,7 @@ Pero no sólo se puede limitar a qué estás haciendo, sino que puedes interactu
 ![Twitter](assets/imgs/pic-twitter.jpg)
 
 ## Detalles adicionales
--Para esta aplicación se empleó : HTML5, CSS3 y Javascript.
+-Para esta aplicación se empleó : HTML5, CSS3 y Javascript. 
 
   
   Cualquier consulta, duda o sugerencia puede realizarla al correo: adayc@hotmail.com

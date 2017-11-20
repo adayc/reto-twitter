@@ -6,46 +6,37 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Twitter</title>
   <!-- Hojas de estilo para la fuente de este proyecto  -->
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500|Shadows+Into+Light+Two" rel="stylesheet">
   <!-- Hojas de estilo personalizada para este proyecto  -->
- 
-<link href="css/main.css" rel="stylesheet"> 
+  <link href="css/main.css" rel="stylesheet"> 
 </head>
 <body>
+  <!-- Header que incluye el titulo  -->
   <header>
-   <h1>Twitter</h1> 
+   <h1>Twitter - @caty_8913</h1> 
   </header>
- <main>
+  <!-- Main con el contenido -->
+  <main>
+    <!-- Section con el perfil del usuario  -->
     <section id="perfil">
-        
-        
-          <h2>Reto de Código</h2>
-          <p>Hola, soy Ada Yajahuanca <br> Estudiante de Laboratoria</p>
-          
-          <p>Código: LIM172136</p>
-        
-      </section>
-  
-<section id="post">
-    <div name="tweet" id="tweet-box" class="tweet-box rich-editor" contenteditable="true" placeholder="¿Que estas pensando?"></div>
-    <button type="submit" class="" id="sendTwit" disabled="true">Twittear</button>
-    <div id="counter">140</div>
-  </section>
-    <section id="tweet-content">
-        <div class="tweet">
-           
-        </div>
-        <div class="hour">
-          
-        </div>
-      
+      <h2>Reto de Código</h2>
+      <p>Hola, soy Ada Tatiana Yajahuanca Chupa <br> Estudiante de Laboratoria</p>
+      <p>Código: LIM172136</p>
     </section>
- 
+    <!-- Section en el que se postea el twit  -->
+    <section id="post">
+      <div name="tweet" id="tweet-box" class="tweet-box rich-editor" contenteditable="true" placeholder="¿Que estas pensando?"></div>
+      <button type="submit" class="" id="sendTwit" disabled="true">Twittear</button>
+      <div id="counter">140</div>
+    </section>
+    <!-- Section en el que se inserta los tweets -->
+    <section id="tweet-content">
+      <div class="tweet"></div>
+      <div class="hour"></div>
+    </section>
   </main>
-
- 
+ <!-- Enlace con JS -->
  <script src="js/app.js">
  </script>
 </body>
-
 </html>

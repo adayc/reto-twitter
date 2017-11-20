@@ -6,9 +6,11 @@ var counter = document.getElementById('counter');
 
 
 window.addEventListener('load', function(event) {
+  // Ponemos el foco a la caja de texto del tweet y deshabilitamos el boton twittear
   tweet.focus();
   btnTwittear.disabled = true;
-  // Habilitando y deshabilitando el boton
+
+  // Habilitamos y deshabilitamos el boton de acuerdo a la longitud del texto ingresado
   tweet.addEventListener('keyup', function(event) {
     btnTwittear.disabled = false;
     if (event.keyCode === 8) {
@@ -19,10 +21,11 @@ window.addEventListener('load', function(event) {
     }
   });
 
+  // Habilitamos el contador de acuerdo a la longitud del texto ingresado
   tweet.addEventListener('keypress', function(event) {
-    // longitud de texto tweet.innerHTML.length
     setInterval(
       function() {
+        // El color del contador cambiara de acuerdo a la longitud del texto
         counter.innerHTML = 140 - (tweet.innerHTML.length);
         if (tweet.innerHTML.length > 140) {
           counter.classList.add('red');
@@ -51,11 +54,11 @@ window.addEventListener('load', function(event) {
   });
 
 
+  // En el botón twittear se insertará el tweet en el contenedor
   btnTwittear.addEventListener('click', function(event) {
-    // Añadiendo hour
+    // Añadiendo la hora del tweet
     var fecha = new Date();
     var hour = 'Publicado a las ' + fecha.getHours() + ':' + fecha.getMinutes() + ' horas';
-
 
     var newHour = document.createElement('div');
     newHour.innerHTML = hour;

@@ -11,70 +11,60 @@ margin:0;
 
 body
 {
- background-color:#e6ecf0;
- background-image: url('../assets/imgs/bg-twitter.jpg');
- background-position:center; /*Posicionamos el fondo en el centro*/
- /*background-repeat:no-repeat;/*Indicamos que no se repita el fondo*/
- 
- font-family: 'Fira Sans', sans-serif;
+  background-color:#e6ecf0;
+  background-image: url('../assets/imgs/bg-twitter.jpg');
+  background-position:center; /*Posicionamos el fondo en el centro*/
+  font-family: 'Fira Sans', sans-serif;
 }
 
+ /*Titulo de la cabecera*/
 h1{
-  
   background-color: rgba(0, 0, 0, 0.3);
+  color: white;
   font-family: 'Shadows Into Light Two', cursive;
   padding: 20px;
   text-align: center;
-  color: white;
 }
 
-
+/*Estilos que se aplica a la información del perfil de user*/
 
 #perfil {
-  width:40%;
-  
-  margin:25px;
-  display: inline-block;
- 
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 5px;
-  
+  display: inline-block;
+  margin:25px;
   padding: 20px;
   text-align:center;
+  width:40%;
 }
+
 #perfil h2 {
-  margin-bottom: 25px;
-  font-size: 28px;
   color: rgba(104, 180, 161, 0.9);
+  font-size: 28px;
+  margin-bottom: 25px;
 }
+
 #perfil p {
   font-size: 25px;
-  text-align: left;
   margin-bottom: 8px;
+  text-align: left;
 }
 
+/*Estilos que se aplica a la sección en la que se ingresa el tweet*/
 #post{
-  width:45%;
-  float: right;
-  margin-right:5%;
-  margin-top: 25px;
-  
- 
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 5px;
+  float: right;
   font-size: 30px;
+  margin-right:5%;
+  margin-top: 25px;
   padding: 20px;
-  
-  
+  width:45%;
 }
 
-
-
 #tweet-box{
- outline:solid 1px gray;
- 
+  outline:solid 1px gray;
   padding: 10px;
-  
 }
 
 #tweet-box:empty:not(:focus):before {
@@ -82,40 +72,24 @@ h1{
   color:gray
 }
 
-/*Boton  del formulario  */
+/*Boton  para enviar el tweet*/
 #sendTwit{
-
-  
   border-radius: 15px;/*Borde radial del boton   */
-  
   cursor: pointer;
-
   font-size:15px;
   font-weight:700;
   margin: 5px;
   padding: 5px;
 }
 
+/*Contador de la cantidad de letras ingresadas*/
 #counter {
   float: right;
   font-weight: bold;
   margin-right: 20px;
 }
 
-#tweet-content{
-  font-size: 20px;
-  background-color: rgba(255, 255, 255, 0.3);
-  margin:25px;
-  padding:25px 100px;
-}
-
-.tweet{
-  
-  
-  background-color: rgba(255, 255, 255, 0.3);
-  margin:5px;
-}
-
+/*Clases que serán añadidas de acuerdo a la longitud de caracteres*/
 .red{
   color: red;
 }
@@ -126,6 +100,20 @@ h1{
 
 .black{
   color: black;
+}
+
+/*Estilos que se aplicarán a la sección de tweets posteados*/
+
+#tweet-content{
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 20px;
+  margin:25px;
+  padding:25px 100px;
+}
+
+.tweet{
+  background-color: rgba(255, 255, 255, 0.3);
+  margin:5px;
 }
 
 .hour{
